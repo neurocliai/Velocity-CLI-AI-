@@ -26,7 +26,7 @@ export default function Landing() {
     <div className="min-h-screen bg-background text-white relative overflow-hidden">
       <AnimatedBackground />
       <div className="absolute inset-0 bg-background/20 backdrop-blur-[1px] pointer-events-none z-0" />
-      
+
       <div className="relative z-10">
         <header className="container mx-auto px-6 py-6 flex justify-between items-center glass sticky top-0 z-50 rounded-b-2xl mb-12">
           <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function Landing() {
 
         <main className="container mx-auto px-6">
           <section className="flex flex-col items-center text-center py-20">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -58,20 +58,20 @@ export default function Landing() {
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
               v0.1.3 is now available
             </motion.div>
-            
-            <motion.h2 
+
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight max-w-4xl tracking-tight"
             >
-              The Next-Generation <br/>
+              The Next-Generation <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-purple-500 drop-shadow-[0_0_25px_rgba(6,182,212,0.4)]">
                 Terminal AI Assistant
               </span>
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -80,14 +80,14 @@ export default function Landing() {
               Transform your CLI experience with real-time AI assistance, beautiful typography, and seamless workspace integration.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="glass p-6 rounded-3xl flex flex-col items-center gap-4 max-w-md w-full relative overflow-hidden group border border-white/10 shadow-[0_0_40px_rgba(6,182,212,0.15)] hover:shadow-[0_0_60px_rgba(6,182,212,0.25)] transition-all duration-500"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-purple-500/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              
+
               <div className="text-gray-400 text-sm font-mono flex items-center justify-between w-full border-b border-white/10 pb-4 relative z-10">
                 <span className="flex items-center gap-2 text-gray-300">
                   <Terminal className="w-4 h-4 text-primary" />
@@ -103,15 +103,15 @@ export default function Landing() {
               <div className="w-full relative z-10">
                 <div className="bg-[#0D1117] p-5 rounded-xl border border-white/5 font-mono text-left space-y-3 relative group/code shadow-inner">
                   <div className="flex items-center text-gray-300">
-                    <span className="text-primary mr-3 select-none">❯</span> 
+                    <span className="text-primary mr-3 select-none">❯</span>
                     <span><span className="text-blue-400">npm</span> <span className="text-yellow-200">i</span> -g velocity-ai</span>
                   </div>
                   <div className="flex items-center text-gray-300">
-                    <span className="text-primary mr-3 select-none">❯</span> 
+                    <span className="text-primary mr-3 select-none">❯</span>
                     <span><span className="text-green-400">velocity</span> chat</span>
                   </div>
-                  
-                  <button 
+
+                  <button
                     onClick={handleCopy}
                     className="absolute top-3 right-3 p-2 rounded-lg bg-white/5 hover:bg-white/15 border border-white/10 text-gray-400 hover:text-white transition-all opacity-0 group-hover/code:opacity-100 backdrop-blur-sm"
                     title="Copy commands"
@@ -162,11 +162,11 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="glass p-6 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-gradient-to-b from-black/60 to-black/40 backdrop-blur-md relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -z-10 group-hover:bg-primary/20 transition-colors duration-700" />
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] -z-10 group-hover:bg-secondary/20 transition-colors duration-700" />
-                
+
                 <div className="flex items-center gap-2 mb-6 border-b border-white/10 pb-4">
                   <div className="flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -175,7 +175,7 @@ export default function Landing() {
                   </div>
                   <span className="text-xs text-gray-500 font-mono flex-1 text-center font-medium tracking-wider">bash - velocity chat</span>
                 </div>
-                
+
                 <div className="font-mono text-sm space-y-4 leading-relaxed">
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="text-cyan-400/80">┌   ⚡ Velocity AI </motion.div>
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} className="text-cyan-400/80">│</motion.div>
@@ -191,7 +191,7 @@ export default function Landing() {
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6 }}>
                     <span className="text-cyan-400/80">├─────────────────────────────────────────╯</span>
                   </motion.div>
-                  
+
                   <motion.div initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }}>
                     <div className="text-cyan-400/80">│</div>
                     <div><span className="text-blue-500 font-bold">◇  You</span></div>
@@ -202,7 +202,7 @@ export default function Landing() {
                     <div className="text-cyan-400/80">│</div>
                     <div><span className="text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(6,182,212,0.8)]">◇  Velocity AI</span></div>
                     <div className="text-gray-400 text-xs mt-1 ml-4 border-l-2 border-white/10 pl-2">
-                      [Executing Tool: list_directory]<br/>
+                      [Executing Tool: list_directory]<br />
                       Completed.
                     </div>
                   </motion.div>
@@ -211,9 +211,9 @@ export default function Landing() {
                     <div className="text-cyan-400/80">│</div>
                     <div><span className="text-cyan-400 font-bold drop-shadow-[0_0_8px_rgba(6,182,212,0.8)]">◇  Velocity AI</span></div>
                     <div className="text-gray-300 typewriter-text w-full max-w-fit">
-                      The current directory suggests this is a React web app built with Vite.<br/>
-                      Main folder: src/ <br/>
-                      - App.tsx: Root component<br/>
+                      The current directory suggests this is a React web app built with Vite.<br />
+                      Main folder: src/ <br />
+                      - App.tsx: Root component<br />
                       - pages/: Top-level views
                     </div>
                   </motion.div>
@@ -235,7 +235,7 @@ export default function Landing() {
               <h3 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Everything You Need to Build Faster</h3>
               <p className="text-gray-400 max-w-2xl mx-auto text-lg">Velocity AI brings an entire team of specialized AI agents right into your terminal, giving you superpowers to code, debug, and orchestrate complex tasks.</p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/40 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
@@ -291,7 +291,7 @@ export default function Landing() {
             <div className="text-center mb-16">
               <h3 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">About the Founder & Developer</h3>
             </div>
-            
+
             <div className="max-w-4xl mx-auto glass p-10 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.15)] flex flex-col md:flex-row items-center gap-10">
               <div className="w-32 h-32 shrink-0 rounded-full bg-gradient-to-tr from-primary to-secondary p-1 flex items-center justify-center">
                 <div className="w-full h-full bg-[#0D1117] rounded-full flex items-center justify-center overflow-hidden">
@@ -299,13 +299,14 @@ export default function Landing() {
                 </div>
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+                <h4 className="text-2xl font-bold text-white mb-2">
                   Malladi Vishwanath Tanmai
-                  <a href="https://www.linkedin.com/in/vishwanath-tanmai-b09063226/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0077b5] transition-colors" title="LinkedIn Profile">
-                    <LinkedinIcon className="w-6 h-6" />
-                  </a>
                 </h4>
-                <p className="text-primary font-medium mb-4">Founder & Lead Developer, Velocity AI</p>
+                <p className="text-primary font-medium mb-4">Founder & Lead Developer, VelocityGpt AI</p>
+                <a href="https://www.linkedin.com/in/vishwanath-tanmai-b09063226/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0077b5]/10 hover:bg-[#0077b5]/20 text-blue-400 border border-[#0077b5]/30 hover:border-[#0077b5]/50 hover:shadow-[0_0_15px_rgba(0,119,181,0.3)] transition-all font-medium w-fit mb-6">
+                  <LinkedinIcon className="w-5 h-5" />
+                  Connect on LinkedIn
+                </a>
                 <div className="text-gray-400 leading-relaxed space-y-3">
                   <p>Malladi Vishwanath Tanmai is the visionary founder and lead developer behind Velocity AI. Driven by a deep passion for artificial intelligence and developer productivity, Tanmai built Velocity to seamlessly bridge the gap between complex AI capabilities and intuitive terminal workflows.</p>
                   <p>With deep expertise in full-stack engineering and autonomous agent orchestration, Tanmai designed a platform that brings multi-agent swarms directly into the developer's local workspace. The ultimate mission is to empower developers worldwide by providing an intelligent assistant that doesn't just suggest code snippets, but actively builds, debugs, and scales entire software architectures alongside you.</p>
