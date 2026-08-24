@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Terminal, Zap, Code, Shield, Copy, Check, Cpu, Search, Workflow } from 'lucide-react';
+import { Terminal, Zap, Code, Shield, Copy, Check, Cpu, Search, Workflow, User } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedBackground from '../components/AnimatedBackground';
 
@@ -275,6 +275,28 @@ export default function Landing() {
                 </div>
                 <h4 className="text-xl font-bold mb-3 text-white group-hover:text-rose-400 transition-colors">Continuous Orchestration</h4>
                 <p className="text-gray-400 leading-relaxed">Execute background bash tasks, monitor file changes, and trigger code transformations dynamically.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="about-founder" className="py-24 border-t border-white/10">
+            <div className="text-center mb-16">
+              <h3 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">About the Founder & Developer</h3>
+            </div>
+            
+            <div className="max-w-4xl mx-auto glass p-10 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.15)] flex flex-col md:flex-row items-center gap-10">
+              <div className="w-32 h-32 shrink-0 rounded-full bg-gradient-to-tr from-primary to-secondary p-1 flex items-center justify-center">
+                <div className="w-full h-full bg-[#0D1117] rounded-full flex items-center justify-center overflow-hidden">
+                  <User className="w-16 h-16 text-gray-400" />
+                </div>
+              </div>
+              <div>
+                <h4 className="text-2xl font-bold text-white mb-2">Malladi Vishwanath Tanmai</h4>
+                <p className="text-primary font-medium mb-4">Founder & Lead Developer, Velocity AI</p>
+                <div className="text-gray-400 leading-relaxed space-y-3">
+                  <p>Malladi Vishwanath Tanmai is the visionary founder and lead developer behind Velocity AI. Driven by a deep passion for artificial intelligence and developer productivity, Tanmai built Velocity to seamlessly bridge the gap between complex AI capabilities and intuitive terminal workflows.</p>
+                  <p>With deep expertise in full-stack engineering and autonomous agent orchestration, Tanmai designed a platform that brings multi-agent swarms directly into the developer's local workspace. The ultimate mission is to empower developers worldwide by providing an intelligent assistant that doesn't just suggest code snippets, but actively builds, debugs, and scales entire software architectures alongside you.</p>
+                </div>
               </div>
             </div>
           </section>
