@@ -16,7 +16,7 @@ export default function Landing() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('npm i -g velocity-ai\nvelocity chat');
+    navigator.clipboard.writeText('npm cache clean --force\nnpm i -g velocity-ai@latest\nvelocity chat');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -104,7 +104,11 @@ export default function Landing() {
                 <div className="bg-[#0D1117] p-5 rounded-xl border border-white/5 font-mono text-left space-y-3 relative group/code shadow-inner">
                   <div className="flex items-center text-gray-300">
                     <span className="text-primary mr-3 select-none">❯</span>
-                    <span><span className="text-blue-400">npm</span> <span className="text-yellow-200">i</span> -g velocity-ai</span>
+                    <span><span className="text-blue-400">npm</span> cache clean --force</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <span className="text-primary mr-3 select-none">❯</span>
+                    <span><span className="text-blue-400">npm</span> <span className="text-yellow-200">i</span> -g velocity-ai@latest</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <span className="text-primary mr-3 select-none">❯</span>

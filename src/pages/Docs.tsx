@@ -61,7 +61,8 @@ export default function Docs() {
                 </div>
                 <p className="mb-4">Velocity AI is distributed as an npm package. To install it globally on your system, ensure you have Node.js installed, then run:</p>
                 <div className="bg-black/50 p-4 rounded-xl font-mono text-sm border border-white/10 mb-6 text-primary">
-                  npm install -g velocity-ai
+                  npm cache clean --force<br />
+                  npm install -g velocity-ai@latest
                 </div>
                 <p className="mb-4">Once installed, you can launch the interactive chat interface by simply typing:</p>
                 <div className="bg-black/50 p-4 rounded-xl font-mono text-sm border border-white/10 text-primary">
