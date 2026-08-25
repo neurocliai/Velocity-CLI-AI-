@@ -59,9 +59,9 @@ export default function Docs() {
                   <div className="p-2 bg-primary/20 rounded-lg text-primary"><Terminal size={24} /></div>
                   <h2 className="text-3xl font-semibold text-white">Getting Started</h2>
                 </div>
-                <p className="mb-4">Velocity AI is distributed as an npm package. To run it on your system, ensure you have Node.js installed, then execute:</p>
+                <p className="mb-4">Velocity AI is distributed as an npm package. To install it globally on your system, ensure you have Node.js installed, then run:</p>
                 <div className="bg-black/50 p-4 rounded-xl font-mono text-sm border border-white/10 mb-6 text-primary">
-                  npx velocity-ai@latest
+                  npm install -g velocity-ai
                 </div>
                 <p className="mb-4">Once installed, you can launch the interactive chat interface by simply typing:</p>
                 <div className="bg-black/50 p-4 rounded-xl font-mono text-sm border border-white/10 text-primary">
